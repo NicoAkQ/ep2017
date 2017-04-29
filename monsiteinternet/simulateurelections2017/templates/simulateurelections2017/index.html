@@ -37,18 +37,18 @@
             <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
 
             <br>
-            La france en marche</div>
-            <!-- <div class="row col s6"><img src={% static "simulateurelections2017/img/project5.png" %}></div> -->
+            </div>
+            
 
 
             <div class="input-field col s6">{% if envoi %}Il manque des données !{% endif %}
                 <form action="{% url "accueil" %}" method="post">
-                   <!--  {% csrf_token %}
-                    {{ form.as_p }} -->
+                    {% csrf_token %}
+                    {{ form.as_p }}
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>"% s'abstiendront au second tour"</p>
                       <p class="range-field">
-      <input type="range" id="test5" min="0" max="100" />
+      <input type="range" value="12" name="abs_NDA" min="0" max="100" />
     </p>
     <p>"% voteront pour macron "</p>
       <p class="range-field">
@@ -65,19 +65,21 @@
                     <img class="img-circle" width="100%" src="https://www.buzzbeed.com/wp-content/uploads/2017/02/macron.jpg">
 
                     <br>
-                    La france en marche</div>
+                    </div>
                     <!-- <div class="row col s6"><img src={% static "simulateurelections2017/img/project5.png" %}></div> -->
 
 
                     <div class="input-field col s6">{% if envoi %}Il manque des données !{% endif %}
                         <form action="{% url "accueil" %}" method="post">
+                        {% csrf_token %}
                         <!--     {% csrf_token %}
                             {{ form.as_p }} -->
                               <p class="range-field">
-                              <h5>"% s'abstiendront au second tour"</h5>
+                                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                              <p>"% s'abstiendront au second tour"</p>
                               <input type="range" id="test5" min="0" max="100" />
-                            </p>  <h5 class="range-field">
-                            "% voteront pour macron ></h5>
+                            </p>  <p class="range-field">
+                            "% voteront pour macron ></p>
                               <input type="range" id="test5" min="0" max="100" />
                             </p>
                             <input type="submit" value="Submit" />

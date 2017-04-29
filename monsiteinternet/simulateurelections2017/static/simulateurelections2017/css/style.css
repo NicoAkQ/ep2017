@@ -267,3 +267,50 @@ footer.page-footer {
 .isNone {
     display: none;
 }
+
+.bg {
+  
+   min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,  
+    #2C3E50, #FD746C, 
+    #FF8235, #ffff1c, 
+    #92FE9D, #00C9FF, 
+    #a044ff, #e73827);
+  background-repeat: no-repeat;
+  background-size: 1000% 1000%;
+  animation: gradient 50s ease infinite;
+}
+
+@keyframes gradient { 
+  0%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 0%}
+}
+.caption {
+  
+  left: 0;
+  top: 50%;
+  width: 100%;
+  vertical-align: center
+  color: black;
+  z-index: 100
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+#download-button {
+    margin-top: 20%;
+}
