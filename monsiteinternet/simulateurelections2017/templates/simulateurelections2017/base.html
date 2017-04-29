@@ -1,398 +1,305 @@
 {% load static %}
 
+
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Elysée 20017</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Elections présidentielles 2017</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static "simulateurelections2017/css/bootstrap.min.css"%}"
-    rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="{% static "simulateurelections2017/css/freelancer.min.css" %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href={% static "simulateurelections2017/vendor/font-awesome/css/font-awesome.min.css" %} rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href={% static "simulateurelections2017/min/plugin-min.css" %} type="text/css" rel="stylesheet">
+    <link href={% static "simulateurelections2017/min/custom-min.css" %} type="text/css" rel="stylesheet" >
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" rel="stylesheet" >
+    <link href={% static "simulateurelections2017/css/style.css" %} type="text/css" rel="stylesheet" >
+      <script src={% static "simulateurelections2017/js/isNone.js" %} type="text/javascript" src="">
+     
+ 
+</script>
 </head>
+<body id="top" class="scrollspy">
 
-<body id="page-top" class="index">
-<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+    <!-- Pre Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Elysée 2017</a>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav id="nav_f" class="default_color" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" id="logo-container" class="brand-logo">Elysée 2017</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#portfolio">Simulateur</a></li>
+                        <li><a href="#work">A propos</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="side-nav">
+                     <li><a href="#portfolio">Simulateur</a></li>
+                     <li><a href="#work">A propos</a></li>
+                 </ul>
+                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+             </div>
+         </div>
+     </nav>
+ </div>
+
+
+
+ <!--Hero-->
+ <div class="section no-pad-bot" id="index-banner">
+    <div class="container center">
+        <h1 class="text_h center header cd-headline letters type">
+            <span>Elysée 2017 :</span> 
+            <span class="cd-words-wrapper waiting">
+                <br>
+                <b class="is-visible">Macron</b>
+                <b>Le Pen</b>
+                <b>Qui sera au pouvoir ?</b>
+            </span>
+        </h1>
+        <i class="white-text animated bounce infinite fa fa-chevron-down fa-4" aria-hidden="true"></i>
+    </div>
+    
+</div>
+
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12 center">
+                <h2 class="center header text_h2">Bienvenue sur le simulateur de résultat du second tour des <span class="span_h2">présidentielles</span>.</h2> 
+                <h4 class="center header text_h2">Nous vous proposons d'essayer de deviner ce que feront les partisans de chaque candidat du 1er tour.</h4>
+                <a class="waves-effect waves-light btn black"><i onclick="toggleDisplay()" class="material-icons left">input</i>Simuler le résultat</a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Simulateur</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/actu-people/politique/20160422/l-elysee-en-avril-20162/5179186-1-fre-FR/L-Elysee-en-avril-2016_exact1024x768_l.jpg" %}></div>
+</div>
+
+<div class="section scrollspy" id="work">
+    <div class="container center">
+        <h4 class="header text_b">1er tour </h4>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project2.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project5.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project6.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="#">Project link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div >
     {% block content %}
-    <!-- Header -->
+
     {% endblock %}
+</div>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>A propos</h2>
-                    <hr class="star-light">
+
+
+<!--Parallax-->
+
+<!--Team-->
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="sub
+
+                            t">Submit
+                            <i class="mdi-content-send right white-text"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p>Ce simulateur se base sur un fichier excel, téléchargeable ci-dessous:</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Télécharger le fichier excel de base
+            </form>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">joashpereira.com</h5>
+            <ul>
+                <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
+                <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">Social</h5>
+            <ul>
+                <li>
+                    <a class="white-text" href="https://www.behance.net/joashp">
+                        <i class="small fa fa-behance-square white-text"></i> Behance
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; NicoAkQ 2017
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/cabin.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
+                        <i class="small fa fa-facebook-square white-text"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://github.com/joashp">
+                        <i class="small fa fa-github-square white-text"></i> Github
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                        <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/cake.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+</div>
+<div class="footer-copyright default_color">
+    <div class="container">
+        Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/circus.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/game.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/safe.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="{% static "simulateurelections2017/img/portfolio/submarine.png" %}" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</footer>
 
-    <!-- jQuery -->
-    <script src={% static "simulateurelections2017/vendor/jquery/jquery.min.js" %}></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src={% static "simulateurelections2017/vendor/bootstrap/js/bootstrap.min.js" %}></script>
+<!--  Scripts-->
+  <!--   <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src={% static "simulateurelections2017/js/jquery-2.1.1.min.js" %}></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  
+  <script type="text/javascript" src={% static "simulateurelections2017/min/plugin-min.js" %}></script> 
+  <script type="text/javascript" src={% static "simulateurelections2017/min/custom-min.js" %}></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src={% static "simulateurelections2017/js/jqBootstrapValidation.js" %}></script>
-    <script src={% static "simulateurelections2017/js/contact_me.js" %}></script>
 
-    <!-- Theme JavaScript -->
-    <script src={% static "simulateurelections2017/js/freelancer.min.js" %}></script>
+
+   <!--  <script type="text/javascript">
+          var slider = document.getElementById('test5');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+</script> -->
 
 </body>
-
 </html>
