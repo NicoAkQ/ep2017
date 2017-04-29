@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#2196F3">
-    <title>Elysée 20017</title>
+    <title>Elysée 2017</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,7 +37,7 @@
         <nav id="nav_f" class="default_color" role="navigation">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" id="logo-container" class="brand-logo">Elysée 2017</a>
+                    <a href={% url "accueil" } id="logo-container" class="brand-logo">Elysée 2017</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#portfolio">Simulateur</a></li>
                         <li><a href="#work">A propos</a></li>
@@ -53,12 +53,12 @@
  </div>
 
 
-
+{% block intro %}
  <!--Hero-->
  <div class="section no-pad-bot" id="index-banner">
     <div class="container center">
         <h1 class="text_h center header cd-headline letters type">
-            <span>Elysée 2017 :</span> 
+            <span>Elysée 2017</span> 
             <span class="cd-words-wrapper waiting">
                 <br>
                 <b class="is-visible">Macron</b>
@@ -84,7 +84,7 @@
         </div>
     </div>
 </div>
-
+{% endblock %}
 
 <!-- <div class="section scrollspy" id="work">
     <div class="container center">
@@ -286,6 +286,7 @@
   
   <script type="text/javascript" src={% static "simulateurelections2017/min/plugin-min.js" %}></script> 
   <script type="text/javascript" src={% static "simulateurelections2017/min/custom-min.js" %}></script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b5b1ba4a06581c"></script> 
 
 
 
