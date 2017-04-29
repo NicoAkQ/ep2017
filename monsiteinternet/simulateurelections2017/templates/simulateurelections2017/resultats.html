@@ -78,8 +78,7 @@
 
             <div class="input-field col s6">{% if envoi %}Il manque des données !{% endif %}
                 <form action="{% url "resultats" %}" method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}
+
                       <h4>Marine Le Pen obtient <span class="span_h2">{{pv_lp}}%</span> des voix</h4>
                     <ul>
                         <li>21,30%</li>
@@ -89,13 +88,13 @@
                 </form></div>
             </div>
         </div></div>
-
-               
-                <h2></h2>liygefLGYfzeilguefLIYG
             </div>
         </div>
     </div>
-    <div class="container"><H4 class="center header text_h2">L'abstention au second tour s'élève à' <span class="span_h2">xx%</span></H4 ></div>
+    <div class="container"><H4 class="center header text_h2">L'abstention au second tour s'élève à <span class="span_h2">{{pv_abs}}%</span></H4 ></div>
+      <div class="row center ">
+              <a  href={% url "accueil" %} class="btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Revenir au simulateur</a>
+            </div>
     
 </section>
 {% endblock %}

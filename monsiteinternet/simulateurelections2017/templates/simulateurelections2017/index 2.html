@@ -17,21 +17,21 @@
     <div class="center isNone foo">
         <div class="row">
             <div class="col s12 text-center">
-                <h4>Simulateur</h4>
-
+                <h2>Simulateur</h2>
             </div>
         </div>
     </div>
 </div>
 </section>
-<!-- marine le pen -->
-<form action="{% url "resultats" %}" method="post">
+<!--candidat -->
+
+<form action="{% url "accueil" %}" method="post">
 
 <div id="MAC" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Emmanuel Macron</h4>
-            <img class="img-circle" width="100%" src="http://img.gal.pmdstatic.net/fit/http.3A.2F.2Fwww.2Egala.2Efr.2Fvar.2Fgal.2Fstorage.2Fimages.2Fstars_et_gotha.2Femmanuel_macron.2F3127149-452-fre-FR.2Femmanuel_macron.2Ejpg/460x259/quality/80/emmanuel-macron.jpg">
+            <h2>Emmanuel Macron</h2>
+            <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
                 <br>
         </div>
         <div class="input-field col s6">
@@ -45,7 +45,7 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_MAC" min="0" max="100" />
+      <input type="range" value="100" name="abs_MAC" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
@@ -60,7 +60,7 @@
 <div id="MLP" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Marine Le Pen</h4>
+            <h2>Marine Le Pen</h2>
             <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
                 <br>
         </div>
@@ -75,11 +75,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_MLP" min="0" max="100" />
+      <input type="range" value="100" name="abs_MLP" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="0" name="mac_MLP" min="0" max="100" />
+      <input type="range" value="100" name="mac_MLP" min="0" max="100" />
     </p>
                     
         </div>
@@ -90,7 +90,7 @@
 <div id="FIL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>François Fillon</h4>
+            <h2>François Fillon</h2>
             <img class="img-circle" width="100%" src="https://media.rtl.fr/cache/xRUXe5yxtNv5vnMS2upzbw/880v587-0/online/image/2017/0316/7787698591_francois-fillon.jpg">
                 <br>
         </div>
@@ -106,11 +106,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_FIL" min="0" max="100" />
+      <input type="range" value="12" name="abs_FIL" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_FIL" min="0" max="100" />
+      <input type="range" name="mac_FIL" min="0" max="100" />
     </p>
                     
         </div>
@@ -121,7 +121,7 @@
 <div id="MEL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Jean-Luc Mélenchon</h4>
+            <h2>Jean-Luc Mélenchon</h2>
             <img class="img-circle" width="100%" src="http://img.20mn.fr/BxVfVpOnSem0eySjbAQZMg/648x415_jean-luc-melenchon-recu-a-l-elysee-le-25-juin-2016.jpg">
                 <br>
         </div>
@@ -137,11 +137,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_MEL" min="0" max="100" />
+      <input type="range" value="100" name="abs_MEL" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_MEL" min="0" max="100" />
+      <input type="range" value="100" name="mac_MEL" min="0" max="100" />
     </p>
                     
         </div>
@@ -152,7 +152,7 @@
 <div id="NDA" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Nicolas Dupont-Aignan</h4>
+            <h2>Nicolas Dupont-Aignan</h2>
             <img class="img-circle" width="100%" src="http://lepeuple.be/wp-content/uploads/nicolas-dupont-aignan.jpg">
                 <br>
         </div>
@@ -168,11 +168,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_NDA" min="0" max="100" />
+      <input type="range" value="100" name="abs_NDA" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_NDA" min="0" max="100" />
+      <input type="range" value="100" name="mac_NDA" min="0" max="100" />
     </p>
                     
         </div>
@@ -183,7 +183,7 @@
 <div id="HAM" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Benoit Hamon</h4>
+            <h2>Benoit Hamon</h2>
             <img class="img-circle" width="100%" src="http://e-spaces.eu/wp-content/uploads/2016/08/Benoit-Hamon.jpg">
                 <br>
         </div>
@@ -199,11 +199,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_HAM" min="0" max="100" />
+      <input type="range" value="100" name="abs_HAM" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_HAM" min="0" max="100" />
+      <input type="range" value="100" name="mac_HAM" min="0" max="100" />
     </p>
                     
         </div>
@@ -213,7 +213,7 @@
 <div id="LAS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Jean Lassalle</h4>
+            <h2>Jean Lassalle</h2>
             <img class="img-circle" width="100%" src="http://images.sudouest.fr/images/2015/03/04/jean-lassalle_2528657_480x300.jpg?v=1">
                 <br>
         </div>
@@ -229,11 +229,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_LAS" min="0" max="100" />
+      <input type="range" value="100" name="abs_LAS" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_LAS" min="0" max="100" />
+      <input type="range" value="100" name="mac_LAS" min="0" max="100" />
     </p>
         </div>
     </div>
@@ -242,7 +242,7 @@
 <div id="POU" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Philippe Poutou</h4>
+            <h2>Philippe Poutou</h2>
             <img class="img-circle" width="100%" src="http://md1.libe.com/photo/861441-prodlibe-poutou.jpg?modified_at=1488797318&width=960">
                 <br>
         </div>
@@ -258,11 +258,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_POU" min="0" max="100" />
+      <input type="range" value="100" name="abs_POU" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_POU" min="0" max="100" />
+      <input type="range" value="100" name="mac_POU" min="0" max="100" />
     </p>
                     
         </div>
@@ -272,7 +272,7 @@
 <div id="ASS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>François Asselineau</h4>
+            <h2>François Asselineau</h2>
             <img class="img-circle" width="100%" src="https://www.minutenews.fr/wp-content/uploads/2017/03/minutenews_francois-asselineau.jpg">
                 <br>
         </div>
@@ -288,11 +288,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_ASS" min="0" max="100" />
+      <input type="range" value="100" name="abs_ASS" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_ASS" min="0" max="100" />
+      <input type="range" value="100" name="mac_ASS" min="0" max="100" />
     </p>
                     
         </div>
@@ -302,7 +302,7 @@
 <div id="ART" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Nathalie Arthaud</h4>
+            <h2>Nathalie Arthaud</h2>
             <img class="img-circle" width="100%" src="http://cdn.static01.nicematin.com/media/npo/mobile_1440w/2017/01/a1-6624104.jpg">
                 <br>
         </div>
@@ -319,11 +319,11 @@
             <p>S'abstiendront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_ART" min="0" max="100" />
+      <input type="range" value="100" name="abs_ART" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_ART" min="0" max="100" />
+      <input type="range" value="100" name="mac_ART" min="0" max="100" />
     </p>
                     
         </div>
@@ -333,7 +333,7 @@
 <div id="CHE" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Jacques Cheminade</h4>
+            <h2>Jacques Cheminade</h2>
             <img class="img-circle" width="100%" src="http://medias.mensquare.com/wp-content/uploads/sites/3/2012/10/cheminade-afp.jpg">
                 <br>
         </div>
@@ -353,7 +353,7 @@
     </p>
     <p>Voteront pour Emmanuel Macron (%) </p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_CHE" min="0" max="100" />
+      <input type="range" value="100" name="mac_CHE" min="0" max="100" />
     </p>
                     
         </div>
@@ -363,7 +363,7 @@
 <div id="ABS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Abstention</h4>
+            <h2>Abstention</h2>
             <img class="img-circle" width="100%" src="http://img.bfmtv.com/c/1256/708/2cb/210c672b9d6699e8f013b9a4668b3.jpg">
                 <br>
         </div>
@@ -377,25 +377,17 @@
             <p>Participeront au second tour (%)
             </p>
                       <p class="range-field">
-      <input type="range" value="0" name="abs_SUP" min="0" max="100" />
+      <input type="range" value="100" name="abs_SUP" min="0" max="100" />
     </p>
     <p>Voteront pour Emmanuel Macron (%)</p>
       <p class="range-field">
-      <input type="range" value="50" name="mac_SUP" min="0" max="100" />
+      <input type="range" value="100" name="mac_SUP" min="0" max="100" />
     </p>
                     
         </div>
     </div>
 </div>
 
-<div class="center container">
-   <!--  <input id="but" class="isNone" type="submit" name=""/> -->
-   <button id="but" class="isNone btn waves-effect waves-light black" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-</div>
-
-
-
 </form>
+
             {% endblock %}

@@ -89,10 +89,13 @@ def extraire_resultat(sheet):
 	dic_result={}
 	case_pv_mac="J29"
 	case_pv_lp="J28"
+	case_pv_abs="I21"
 	pv_mac=round(round(sheet[case_pv_mac].value,4)*100,2)
 	pv_lp=round(round(sheet[case_pv_lp].value,4)*100,2)
+	pv_abs=round(round(sheet[case_pv_abs].value,4)*100,2)
 	dic_result["pv_mac"]=pv_mac
 	dic_result["pv_lp"]=pv_lp
+	dic_result["pv_abs"]=pv_abs
 	return dic_result
 
 

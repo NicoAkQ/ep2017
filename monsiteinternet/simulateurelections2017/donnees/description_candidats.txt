@@ -66,5 +66,12 @@ Abstention
 22,23%
 Vote inconnu
 
+
+Texte NOTE ---
+
+Les créateurs de ce site souhaitent rappeler que la décision d'un vote reste personnelle, et que cette simulation n'a aucun but autre que récréatif. 
+La simulation est faite en se basant sur les données du fichier excel, téléchargeable ci-dessous.
+
+
 Changer : <form action="/simulateur-elections-2017/accueil" method="post">
 Comment vérifier qu'il est valide ?
