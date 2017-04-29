@@ -16,14 +16,14 @@ import pickle
 def convert_wb(string):
 	""" 
 	Convertit les cases excel en leur valeur.
-	Ex : "=round(1-A1,0)" --> "1-sheet["A1"].value"
+	Ex : "=round(1-A1,0)" --> "round(1-sheet["A1"].value,0)"
 	"""
 	string=string.replace("$","")
 	string=convert_round(string)
 	string=string.replace("=","") #enlève le = au début de l'expression
 	string=re.sub(r"(?P<case>[A-Z]+[0-9]+)",r"sheet['\g<case>'].value",string)
-
 	return string
+	
 def convert_round(string):
 	"""
 	Permet à une case d'activer la fonction round
@@ -60,8 +60,8 @@ def evaluer_case(sheet,case):
 	return eval(valeur_conv)
 
 def evaluer_sheet(sheet):
-	for lettre in list(string.ascii_uppercase):
-		for chiffre in range (1,100):
+	for lettre in list(string.ascii_uppercase): # [abcdef...z]
+		for chiffre in range (1,100):		# [1...100]
 			case=str(lettre+str(chiffre))
 			if "=" in str(sheet[case].value):
 				sheet[case].value=evaluer_case(sheet,case)
