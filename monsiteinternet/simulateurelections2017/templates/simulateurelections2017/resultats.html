@@ -1,9 +1,26 @@
 {% extends "simulateurelections2017/base.html" %}
 {% load static %}
 {% block facebook %}
-<meta property="og:description" content="E.Macron obtient {{pv_mac}}% et M.Le Pen {{pv_lp}}% au 2nd tour selon ma simulation! Et vous?" />
-
+<meta property="og:description" content="Emmanuel Macron obtient {{pv_mac}}% et M.Le Pen {{pv_lp}}% au 2nd tour selon ma simulation! Et vous?" />
 <meta property="og:title" content="Simulateur présidentielles 2017" />
+{% if {{pv_mac}}>{{pv_lp}} %}
+<meta property="og:description" content="Emmanuel Macron obtient {{pv_mac}}% au second tour!" />
+<meta property="og:title" content="...et Marine Le Pen {{pv_lp}}% selon ma simulation! Et vous?" />
+  <meta property="og:url" content="www.simulateur-presidentielles-2017.fr">
+  <meta property="og:image" content="https://www.buzzbeed.com/wp-content/uploads/2017/02/macron.jpg" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
+  {% endif %}
+{% if {{pv_mac}}<{{pv_lp}} %}
+<meta property="og:description" content="Marine Le Pen obtient {{pv_lp}}% au second tour!" />
+<meta property="og:title" content="...et Emmanuel Macron {{pv_mac}}% selon ma simulation! Et vous?" />
+  <meta property="og:url" content="www.simulateur-presidentielles-2017.fr">
+  <meta property="og:image" content="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
+
 {% endblock %}
 {% block intro %}
 {% endblock %}
