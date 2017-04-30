@@ -1,3 +1,4 @@
+# coding: utf-8
 from django import forms
 
 # class FormSimulateur2017(forms.Form):

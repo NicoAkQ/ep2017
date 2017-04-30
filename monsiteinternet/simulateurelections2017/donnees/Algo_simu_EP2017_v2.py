@@ -1,3 +1,4 @@
+# coding: utf-8
 # Algorithme en python de résultat aux élections présidentielles
 # Note : Aucune case explicitée dans la feuille excel ne doit
 # avoir de dépendances avec une case qui continue une formule 

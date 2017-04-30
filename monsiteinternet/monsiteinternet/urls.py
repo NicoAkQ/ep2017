@@ -1,3 +1,4 @@
+# coding: utf-8
 """monsiteinternet URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,6 +19,6 @@ from django.contrib import admin
 
 
 urlpatterns = [
-	url(r'^simulateur-elections-2017/',include('simulateurelections2017.urls')),
+	url(r'^',include('simulateurelections2017.urls')),
     url(r'^admin/', admin.site.urls),
 ]
