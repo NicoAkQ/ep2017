@@ -11,7 +11,17 @@
     <title>Elysée 2017</title>
      <meta name="description" content="Simulateur de résultats aux élections présidentielles.">
   <meta name="keywords" content="élections présidentielles 2017 , Marine Le Pen, Emmanuel Macron, simulations, résultats, deuxième tour, second tour, France">
+  <!-- Meta og -->
   <meta name="author" content="NicoAKQ, Théophile Vast">
+  <meta property="og:title" content="Elysée 2017" />
+  <meta property="og:type" content="website.politic" />
+  <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
+  <meta property="og:image" content="http://example.com/ogp.jpg" />
+  <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
   
 
     <!-- CSS  -->
@@ -44,7 +54,7 @@
                     <a href={% url "accueil" %} id="logo-container" class="brand-logo">Elysée 2017</a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#lateur">Simulateur</a></li>
-                        <li><a href="#simu">A propos</a></li>
+                        <li><a href="#modal1">A propos</a></li>  
                     </ul>
                     <ul id="nav-mobile" class="side-nav">
                      <li><a href="#portfolio">Simulateur</a></li>
@@ -55,6 +65,22 @@
          </div>
      </nav>
  </div>
+
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+  <div class="modal-content">
+   <h2 class="center header text_h2">A propos</h2>
+   <h5 class=" center header text_h2">Les créateurs de ce site rappelent que la décision d'un vote reste personnelle, et que cette simulation n'a aucun but autre que récréatif. <br>
+    La simulation se base sur les données du fichier Excel téléchargeable ci-dessous.<br>
+    Source du résultats du premier tour: <a href="http://elections.interieur.gouv.fr/presidentielle-2017/">Ministère de l'intérieur</a></h5>
+    <div class="center container">
+      <a href={% static "simulateurelections2017/donnees/Simulateur_resultat_2emetour_Presidentielles2017_LIBRE.xlsx" %} id="download-button" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Télécharger le fichier Excel</a>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">revenir au site</a>
+  </div>
+</div>
 
 
 {% block intro %}
@@ -97,19 +123,11 @@
     {% endblock %}
 </div>
 
-<div class="">
-
- <h2 class="center header text_h2">A propos</h2>
+<!--  <h2 class="center header text_h2">A propos</h2>
        <h5 class=" center header text_h2">Les créateurs de ce site rappelent que la décision d'un vote reste personnelle, et que cette simulation n'a aucun but autre que récréatif. <br>
 La simulation se base sur les données du fichier Excel téléchargeable ci-dessous.<br>
-Source : <a href="http://elections.interieur.gouv.fr/presidentielle-2017/">Ministère de l'intérieur</a></h5>
+Source : <a href="http://elections.interieur.gouv.fr/presidentielle-2017/">Ministère de l'intérieur</a></h5> -->  
 
-<div class="center container">
-  <a href={% static "simulateurelections2017/donnees/Simulateur_resultat_2emetour_Presidentielles2017_LIBRE.xlsx" %} id="download-button" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4">Télécharger le fichier Excel</a>
-</div>
-  
-
-</div>
 
 <div class="parallax-container center">
     <div class="parallax">  <div class="row center ">
@@ -138,10 +156,10 @@ Source : <a href="http://elections.interieur.gouv.fr/presidentielle-2017/">Minis
 
 
 <!--  Scripts-->
-  <!--   <script
+    <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script> -->
+  crossorigin="anonymous"></script>
   <script type="text/javascript" src={% static "simulateurelections2017/js/jquery-2.1.1.min.js" %}></script>
 
   
@@ -158,6 +176,13 @@ Source : <a href="http://elections.interieur.gouv.fr/presidentielle-2017/">Minis
 <!-- Go to www.addthis.com/dashboard to customize your tools --> 
 
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57b5b1ba4a06581c"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
+</script>
 
 </body>
 </html>
