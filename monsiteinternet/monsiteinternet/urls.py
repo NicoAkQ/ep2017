@@ -17,7 +17,7 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 
-
+#include('simulateurelections2017.urls')
 urlpatterns = [
 	url(r'^',include('simulateurelections2017.urls')),
     url(r'^admin/', admin.site.urls),
