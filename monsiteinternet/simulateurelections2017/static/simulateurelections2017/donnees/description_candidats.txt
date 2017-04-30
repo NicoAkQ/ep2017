@@ -1,0 +1,77 @@
+EM
+24,01%
+En Marche
+https://en-marche.fr
+
+MLP
+21,30%
+Extrême-droite
+frontnational.com
+
+FF
+20,01%
+Les Républicains
+fillon2017.fr
+Vote Emmanuel Macron (http://video.lefigaro.fr/figaro/video/francois-fillon-appelle-a-voter-emmanuel-macron-au-second-tour/5408457071001/)
+
+JLM
+19,58%
+La France Insoumise
+https://jlm2017.fr
+Vote blanc ou Macron (https://www.lesechos.fr/elections/jean-luc-melenchon/0212024500472-presidentielle-melenchon-ne-tranche-pas-entre-vote-macron-et-vote-blanc-2083446.php)
+
+NDA
+4,70%
+Debout la France
+nda-2017.fr
+Vote Marine Le Pen (http://www.france24.com/fr/20170428-france-presidentielle-nicolas-dupont-aignan-soutient-marine-le-pen-front-national)
+
+BH
+6,36%
+Parti socialiste
+https://www.benoithamon2017.fr/
+Vote Emmanuel Macron (http://www.lepoint.fr/video/reaction-des-militants-d-en-marche-quand-benoit-hamon-annonce-son-soutien-a-emmanuel-macron-23-04-2017-2121950_738.php)
+
+JL
+1,21%
+Résistons !
+http://jeanlassalle2017.fr/
+Vote inconnu (https://www.publicsenat.fr/article/politique/jean-lassalle-appelle-a-voter-blanc-au-second-tour-59522)
+
+PP
+1,09%
+Nouveau Parti Anticapitaliste
+https://poutou2017.org/
+S'abstient (bfmtv.com/politique/arthaud-et-poutou-n-appellent-p...)
+
+FA
+0,92%
+Union Populaire Républicaine
+https://www.upr.fr/
+Vote inconnu (http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html)
+
+NA
+0,64%
+Lutte Ouvrière
+http://www.nathalie-arthaud.info/
+Vote blanc (http://www.nathalie-arthaud.info/communiques/declaration-de-nathalie-arthaud-au-soir-du-premier-tour-89279.html)
+
+JC
+0,18%
+Solidarité et Progrès
+http://www.cheminade2017.fr/
+Vote inconnu (http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html)
+
+Abstention
+22,23%
+Vote inconnu
+
+
+Texte NOTE ---
+
+Les créateurs de ce site souhaitent rappeler que la décision d'un vote reste personnelle, et que cette simulation n'a aucun but autre que récréatif. 
+La simulation est faite en se basant sur les données du fichier excel, téléchargeable ci-dessous.
+
+
+Changer : <form action="/simulateur-elections-2017/accueil" method="post">
+Comment vérifier qu'il est valide ?
