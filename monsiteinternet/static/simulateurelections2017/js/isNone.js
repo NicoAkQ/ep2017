@@ -11,8 +11,7 @@
         x.classList.toggle('isNone');
         var x = document.getElementById("HAM"); // Using a class instead, see note below.
         x.classList.toggle('isNone');
-          var x = document.getElementById("LAS"); // Using a class instead, see note below.
-        x.classList.toggle('isNone');
+       
         var x = document.getElementById("ABS"); // Using a class instead, see note below.
         x.classList.toggle('isNone');
         var x = document.getElementById("but"); // Using a class instead, see note below.
@@ -24,6 +23,8 @@
     };
 
        function showCandidat() {
+           var x = document.getElementById("LAS"); // Using a class instead, see note below.
+        x.classList.toggle('isNone');
            var x = document.getElementById("POU"); // Using a class instead, see note below.
         x.classList.toggle('isNone');
            var x = document.getElementById("ASS"); // Using a class instead, see note below.
