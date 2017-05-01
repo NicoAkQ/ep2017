@@ -12,6 +12,7 @@
         </div>
     </div>
 </header>
+
 <section id="portfolio">
     <div class="center isNone foo">
         <div class="row">
@@ -23,6 +24,29 @@
     </div>
 </div>
 </section>
+<!--
+A METTRE DANS AIDE -->
+<p>
+1) Déplacez les curseurs pour chaque candidat du premier tour selon vos estimations : <ul>
+<li>
+- "Abstention au second tour?" : le taux d'abstention au second tour des personnes ayant voté pour ce candidat au premier tour.</li>
+<li>
+- "Votants pour Emmanuel Macron au second tour ?": le pourcentage des personnes ayant voté pour ce candidat au premier tour votant pour Emmanuel Macron au second tour .</li>
+<li>
+- Le pourcentage de votants pour Marine Le Pen est déduit de celui d'Emmanuel Macron.
+</p>
+<p>
+2) En dessous du dernier candidat, cliquez sur le bouton "Lancez la simulation" pour obtenir les résultats du second tour selon vos prédictions.
+<p>
+Notes : 
+<li>
+- Les curseurs sont positionnés par défaut pour les candidats ayant obtenu un score supérieur à 4% au premier tour selon le sondage du site <a href="https://www.lesechos.fr/elections/presidentielle-2017/0211739192332-sondage-le-suivi-quotidien-de-la-presidentielle-2062937.php">Les Echos</a> (mise à jour: 28/04/17).
+</li>
+<li>
+- Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la liste des candidats.
+</li>
+</p>
+
 <!-- marine le pen -->
 <form action="{% url "resultats" %}" method="post">
 
@@ -41,12 +65,12 @@
                     <li><a href="https://en-marche.fr">en-marche.fr</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="1" name="abs_MAC" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="98" name="mac_MAC" min="0" max="100" />
     </p>
@@ -71,12 +95,12 @@
                     <li><a href="http://frontnational.com">frontnational.com</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="2" name="abs_MLP" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="2" name="mac_MLP" min="0" max="100" />
     </p>
@@ -102,12 +126,12 @@
                     <li><a href="http://video.lefigaro.fr/figaro/video/francois-fillon-appelle-a-voter-emmanuel-macron-au-second-tour/5408457071001/">Vote Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="28" name="abs_FIL" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Pourcentages de personnes votant Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="60" name="mac_FIL" min="0" max="100" />
     </p>
@@ -133,12 +157,12 @@
                     <li><a href="https://www.lesechos.fr/elections/jean-luc-melenchon/0212024500472-presidentielle-melenchon-ne-tranche-pas-entre-vote-macron-et-vote-blanc-2083446.php">Vote blanc ou Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="40" name="abs_MEL" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%) </p>
+    <p>Pourcentages de personnes votant Emmanuel Macron au second tour ? </p>
       <p class="range-field">
       <input type="range" value="75" name="mac_MEL" min="0" max="100" />
     </p>
@@ -163,12 +187,12 @@
                     <li><a href="http://www.lepoint.fr/video/reaction-des-militants-d-en-marche-quand-benoit-hamon-annonce-son-soutien-a-emmanuel-macron-23-04-2017-2121950_738.php">Vote Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="29" name="abs_HAM" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="96" name="mac_HAM" min="0" max="100" />
     </p>
@@ -193,12 +217,12 @@
                     <li><a href="http://www.france24.com/fr/20170428-france-presidentielle-nicolas-dupont-aignan-soutient-marine-le-pen-front-national">Vote Marine Le Pen</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="32" name="abs_NDA" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="46" name="mac_NDA" min="0" max="100" />
     </p>
@@ -226,7 +250,7 @@
                       <p class="range-field">
       <input type="range" value="0" name="abs_SUP" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%) </p>
+    <p>Pourcentages de personnes votant Emmanuel Macron au second tour ? </p>
       <p class="range-field">
       <input type="range" value="50" name="mac_SUP" min="0" max="100" />
     </p>
@@ -237,7 +261,7 @@
 <!-- CACHER CA -->
 <br>
 <div class="container center">
-    <a id="simu2" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Voir les autres candidats</a>
+    <a id="simu2" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Autres candidats</a>
 </div>
 <br>
 <!--candidat -->
@@ -257,12 +281,12 @@
                     <li><a href="https://www.publicsenat.fr/article/politique/jean-lassalle-appelle-a-voter-blanc-au-second-tour-59522">Vote blanc</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_LAS" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="50" name="mac_LAS" min="0" max="100" />
     </p>
@@ -288,12 +312,12 @@
                     <li><a href="http://www.bfmtv.com/politique/arthaud-et-poutou-n-appellent-pas-a-voter-macron-1149431.html">S'abstient</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_POU" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="50" name="mac_POU" min="0" max="100" />
     </p>
@@ -318,12 +342,12 @@
                     <li><a href="http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html">Vote inconnu</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_ASS" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="50" name="mac_ASS" min="0" max="100" />
     </p>
@@ -349,12 +373,12 @@
                     <li><a href="http://www.nathalie-arthaud.info/communiques/declaration-de-nathalie-arthaud-au-soir-du-premier-tour-89279.html">Vote blanc</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_ART" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="50" name="mac_ART" min="0" max="100" />
     </p>
@@ -379,12 +403,12 @@
                     <li><a href="http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html">Vote inconnu</a></li>
                 </ul>
             </p>                                  
-            <p>S'abstiendront au second tour (%)
+            <p>Abstention au second tour?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_CHE" min="0" max="100" />
     </p>
-    <p>De ceux qui voteront, le feront pour Emmanuel Macron (%)  </p>
+    <p>Votants pour Emmanuel Macron au second tour ?</p>
       <p class="range-field">
       <input type="range" value="50" name="mac_CHE" min="0" max="100" />
     </p>
