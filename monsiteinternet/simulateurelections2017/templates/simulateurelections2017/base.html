@@ -63,9 +63,9 @@
         <nav id="nav_f" class="default_color" role="navigation">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href={% url "accueil" %} id="logo-container" class="brand-logo">Elysée 2017</a>
+                    <a href={% url "accueil" %} id="logo-container" class="brand-logo">Simulateur 2017</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#lateur">Simulateur</a></li>
+                        <li><a href="#haut_intro">Simulateur</a></li>
                         <li><a href="#modal1">A propos</a></li>  
                     </ul>
                     <ul id="nav-mobile" class="side-nav">
@@ -100,15 +100,17 @@
  <div class="section no-pad-bot" id="index-banner">
     <div class="container center">
         <h1 class="text_h center header cd-headline letters type">
+          <div class="intro_elysee"><a href="#haut_intro">
             <span>Elysée 2017</span> 
             <span class="cd-words-wrapper waiting">
                 <br>
                 <b class="is-visible">Macron</b>
                 <b>Le Pen</b>
                 <b>À vous de deviner !</b>
-            </span>
+            </span></a></div>
         </h1>
-        <i class="white-text animated bounce infinite fa fa-chevron-down fa-4" aria-hidden="true"></i>
+        <a href="#intro">
+        <i class="white-text animated bounce infinite fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
     </div>
     
 </div>
@@ -117,15 +119,15 @@
 <!--Intro and service-->
 <div id="intro" class="section scrollspy">
     <div class="container">
-        <div class="row">
+        <div id="haut_intro" class="row">
             <div  id="lateur" class="col s12 center">
                 <h2 class="center header text_h2">Bienvenue sur le simulateur de résultat du second tour des <span class="span_h2">présidentielles</span>.</h2> 
                 <h4 class="center header text_h2">Nous vous proposons d'essayer de deviner ce que feront les partisans de chaque candidat du 1er tour.</h4>
                 
-                <a id="simu" onclick="toggleDisplay()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4"><i  class="material-icons left">input</i>C'est parti! </a>
+                <a id="simu" href="#addthis" onclick="toggleDisplay()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4"><i  class="material-icons left">input</i>C'est parti! </a>
 
                  <!-- Go to www.addthis.com/dashboard to customize your tools --><p> 
-                 <div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="Devinez le choix des partisans des candidats du premier tour!" data-title="Macron ou Le Pen ce dimanche ?" data-media="https://start.lesechos.fr/images/2017/02/01/7187_1485985909_duel-macron-lepen.jpg">
+                 <div id ="addthis" class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="Devinez le choix des partisans des candidats du premier tour!" data-title="Macron ou Le Pen ce dimanche ?" data-media="https://start.lesechos.fr/images/2017/02/01/7187_1485985909_duel-macron-lepen.jpg">
 </p>
             </div>
         </div>

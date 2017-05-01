@@ -32,7 +32,8 @@ A METTRE DANS AIDE -->
 <form action="{% url "resultats" %}" method="post">
 
 <div class="container center">
-    <a id="simu2" onclick="showAide()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone">...Besoin d'aide?</a>
+
+    <a id="simu2"  onclick="showAide()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone">...Besoin d'aide?</a>
 </div>
 <div id="AIDE" class="container isNone foo zoomIn animate">
     <div class="row z-depth-10">
@@ -67,14 +68,18 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
     </div>
 </div>
 <br>
+
 <div id="MAC" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
         <div class="container center">
-            <h4>Emmanuel Macron</h4></div>
+            <h4>Emmanuel Macron</h4>
             <img class="img-circle" width="100%" src="http://img.gal.pmdstatic.net/fit/http.3A.2F.2Fwww.2Egala.2Efr.2Fvar.2Fgal.2Fstorage.2Fimages.2Fstars_et_gotha.2Femmanuel_macron.2F3127149-452-fre-FR.2Femmanuel_macron.2Ejpg/460x259/quality/80/emmanuel-macron.jpg">
+                <a href="#id_MLP">
                 <br>
-        </div>
+
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
         
             <p>
@@ -90,22 +95,25 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="1" name="abs_MAC" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_MLP" class="range-field">
       <input type="range" value="98" name="mac_MAC" min="0" max="100" />
     </p>
-                    
+          
         </div>
     </div>
 </div>
 
 <!--candidat -->
+
 <div id="MLP" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Marine Le Pen</h4></div>
+            <h4>Marine Le Pen</h4>
             <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
                 <br>
-        </div>
+                <a href="#id_FIL">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -120,7 +128,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="2" name="abs_MLP" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_FIL" class="range-field">
       <input type="range" value="2" name="mac_MLP" min="0" max="100" />
     </p>
                     
@@ -132,10 +140,11 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="FIL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>François Fillon</h4></div>
+            <h4>François Fillon</h4>
             <img class="img-circle" width="100%" src="https://media.rtl.fr/cache/xRUXe5yxtNv5vnMS2upzbw/880v587-0/online/image/2017/0316/7787698591_francois-fillon.jpg">
-                <br>
-        </div>
+                <br><a href="#id_MEL">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -151,7 +160,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="28" name="abs_FIL" min="0" max="100" />
     </p>
     <p>Pourcentages de personnes votant Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_MEL" class="range-field">
       <input type="range" value="60" name="mac_FIL" min="0" max="100" />
     </p>
                     
@@ -163,10 +172,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="MEL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Jean-Luc Mélenchon</h4></div>
+            <h4>Jean-Luc Mélenchon</h4>
             <img class="img-circle" width="100%" src="http://img.20mn.fr/BxVfVpOnSem0eySjbAQZMg/648x415_jean-luc-melenchon-recu-a-l-elysee-le-25-juin-2016.jpg">
                 <br>
-        </div>
+                <a href="#id_HAM">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -182,7 +193,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="40" name="abs_MEL" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_HAM" class="range-field">
       <input type="range" value="75" name="mac_MEL" min="0" max="100" />
     </p>
                     
@@ -193,10 +204,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="HAM" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Benoit Hamon</h4></div>
+            <h4>Benoit Hamon</h4>
             <img class="img-circle" width="100%" src="http://e-spaces.eu/wp-content/uploads/2016/08/Benoit-Hamon.jpg">
                 <br>
-        </div>
+                <a href="#id_NDA">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -212,7 +225,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="29" name="abs_HAM" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_NDA" class="range-field">
       <input type="range" value="96" name="mac_HAM" min="0" max="100" />
     </p>
                     
@@ -223,10 +236,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="NDA" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Nicolas Dupont-Aignan</h4></div>
+            <h4>Nicolas Dupont-Aignan</h4>
             <img class="img-circle" width="100%" src="http://lepeuple.be/wp-content/uploads/nicolas-dupont-aignan.jpg">
                 <br>
-        </div>
+                <a href="#id_ABS">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -242,7 +257,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="32" name="abs_NDA" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_ABS" class="range-field">
       <input type="range" value="46" name="mac_NDA" min="0" max="100" />
     </p>
                     
@@ -253,10 +268,10 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="ABS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Abstentionnistes au premier tour</h4></div>
+            <h4>Abstentionnistes au premier tour</h4>
             <img class="img-circle" width="100%" src="http://img.bfmtv.com/c/1256/708/2cb/210c672b9d6699e8f013b9a4668b3.jpg">
                 <br>
-        </div>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -280,17 +295,19 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <!-- CACHER CA -->
 <br>
 <div class="container center">
-    <a id="simu3" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Autres candidats</a>
+    <a id="simu3" href="#simu3" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Autres candidats</a>
 </div>
 <br>
 <!--candidat -->
 <div id="LAS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Jean Lassalle</h4></div>
+            <h4>Jean Lassalle</h4>
             <img class="img-circle" width="100%" src="http://images.sudouest.fr/images/2015/03/04/jean-lassalle_2528657_480x300.jpg?v=1">
                 <br>
-        </div>
+                <a href="#id_POU">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -306,7 +323,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="100" name="abs_LAS" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_POU" class="range-field">
       <input type="range" value="50" name="mac_LAS" min="0" max="100" />
     </p>
         </div>
@@ -318,10 +335,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="POU" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Philippe Poutou</h4></div>
+            <h4>Philippe Poutou</h4>
             <img class="img-circle" width="100%" src="http://md1.libe.com/photo/861441-prodlibe-poutou.jpg?modified_at=1488797318&width=960">
                 <br>
-        </div>
+                <a href="#id_ASS">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -337,7 +356,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="100" name="abs_POU" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_ASS" class="range-field">
       <input type="range" value="50" name="mac_POU" min="0" max="100" />
     </p>
                     
@@ -348,10 +367,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="ASS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>François Asselineau</h4></div>
+            <h4>François Asselineau</h4>
             <img class="img-circle" width="100%" src="https://www.minutenews.fr/wp-content/uploads/2017/03/minutenews_francois-asselineau.jpg">
                 <br>
-        </div>
+                <a href="#id_ART">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -367,7 +388,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="100" name="abs_ASS" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_ART" class="range-field">
       <input type="range" value="50" name="mac_ASS" min="0" max="100" />
     </p>
                     
@@ -378,10 +399,12 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="ART" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Nathalie Arthaud</h4></div>
+            <h4>Nathalie Arthaud</h4>
             <img class="img-circle" width="100%" src="http://cdn.static01.nicematin.com/media/npo/mobile_1440w/2017/01/a1-6624104.jpg">
                 <br>
-        </div>
+                <a href="#id_CHE">
+        <i class="black-text fa fa-chevron-down fa-4" aria-hidden="true"></i></a>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>
@@ -398,7 +421,7 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
       <input type="range" value="100" name="abs_ART" min="0" max="100" />
     </p>
     <p>Votes exprimés pour Emmanuel Macron au second tour ?</p>
-      <p class="range-field">
+      <p id="id_CHE" class="range-field">
       <input type="range" value="50" name="mac_ART" min="0" max="100" />
     </p>
                     
@@ -409,10 +432,10 @@ Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la
 <div id="CHE" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6"><div class="container center">
-            <h4>Jacques Cheminade</h4></div>
+            <h4>Jacques Cheminade</h4>
             <img class="img-circle" width="100%" src="http://medias.mensquare.com/wp-content/uploads/sites/3/2012/10/cheminade-afp.jpg">
                 <br>
-        </div>
+        </div></div>
         <div class="input-field col s6">
             <p>
                 <ul>

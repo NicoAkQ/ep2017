@@ -319,3 +319,12 @@ footer.page-footer {
     background-color: #444;
     color : white;
 }
+
+a:link {
+color: white;
+
+}
+a:visited {
+color: white;
+
+}

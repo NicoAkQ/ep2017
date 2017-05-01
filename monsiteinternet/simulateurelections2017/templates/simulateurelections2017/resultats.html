@@ -127,11 +127,11 @@
     <div class="container center"> 
     <h4> Partagez ces résultats avec votre entourage </h4>
     {% if pv_mac > pv_lp %}
-    <div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="...et Marine Le Pen {{pv_lp}}% selon ma simulation! Et vous?" data-title="Emmanuel Macron obtient {{pv_mac}}% au second tour!" data-media="https://start.lesechos.fr/images/2017/02/24/7481_1487944283_macron-programme-economies_970x545p.jpg"></div>
+    <div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="...et Marine Le Pen {{pv_lp}}% avec un taux d'abstention de {{pv_abs}}% selon ma simulation! Et vous?" data-title="Emmanuel Macron obtient {{pv_mac}}% au second tour!" data-media="https://start.lesechos.fr/images/2017/02/24/7481_1487944283_macron-programme-economies_970x545p.jpg"></div>
 
 {% endif %}
 {% if pv_mac < pv_lp %}
-<div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="...et Emmanuel Macron {{pv_mac}}% selon ma simulation! Et vous?" data-title="Marine Le Pen obtient {{pv_lp}}% au second tour!" data-media="https://start.lesechos.fr/images/2017/02/13/7329_1486983091_marine-le-pen.jpg"></div>
+<div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="...et Emmanuel Macron {{pv_mac}}%, avec un taux d'abstention de {{pv_abs}}% selon ma simulation! Et vous?" data-title="Marine Le Pen obtient {{pv_lp}}% au second tour!" data-media="https://start.lesechos.fr/images/2017/02/13/7329_1486983091_marine-le-pen.jpg"></div>
 {% endif %}
 
         </div>

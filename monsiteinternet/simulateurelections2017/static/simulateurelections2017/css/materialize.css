@@ -3,6 +3,15 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+a:link {
+color: white;
+
+}
+a:visited {
+color: white;
+
+}
+
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -5044,6 +5053,7 @@ nav ul a span.badge {
 @media only screen and (min-width : 993px) {
   .container {
     width: 70%; } }
+
 
 .container .row {
   margin-left: -0.75rem;
