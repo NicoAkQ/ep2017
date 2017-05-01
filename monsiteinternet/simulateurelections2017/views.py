@@ -49,3 +49,8 @@ def resultats(request):
         # Transférer les données pour traitement à Python
 
     return render(request,'simulateurelections2017/resultats.html',{'pv_mac':resultats["pv_mac"],'pv_lp':resultats["pv_lp"],'pv_abs':resultats["pv_abs"]})
+
+def google(request):
+
+
+    return render(request,'simulateurelections2017/google5b0aef4ac639f252.html')
