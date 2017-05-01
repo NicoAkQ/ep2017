@@ -2,7 +2,6 @@
 {% load static %}
 {% block facebook %}
 {% if pv_mac > pv_lp %}
-<meta property="og:type"   content="article" /> 
 <meta property="og:url"                content="http://www.simulateur-presidentielles-2017.fr" />
 <meta property="og:title"              content="Emmanuel Macron obtient {{pv_mac}}% au second tour!" />
 <meta property="og:description"        content="...et Marine Le Pen {{pv_lp}}% selon ma simulation! Et vous?" />
@@ -17,7 +16,6 @@
   <meta property="og:image:height" content="300" /> -->
 {% endif %}
 {% if pv_mac < pv_lp %}
-<meta property="og:type"   content="article" /> 
 <meta property="og:url"                content="http://www.simulateur-presidentielles-2017.fr" />
 <meta property="og:title"              content="Marine Le Pen obtient {{pv_lp}}% au second tour!" />
 <meta property="og:description"        content="...et Emmanuel Macron {{pv_mac}}% selon ma simulation! Et vous?" />
