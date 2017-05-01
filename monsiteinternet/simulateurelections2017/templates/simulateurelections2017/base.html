@@ -23,17 +23,18 @@
     <meta name="author" content="Nicolas Urai, Théophile Vast">
       <meta property="og:type"   content="website" /> 
   <!-- Meta og -->
-<!--   {% block facebook %} -->
-
+{% block facebook %}
+<!--
     <meta property="og:url" content="www.simulateur-presidentielles-2017.fr">
       <meta property="og:title" content="Macron ou Le Pen ce dimanche ?" />
   <meta property="og:description" content="Devinez le choix des partisans des candidats du premier tour!">
+  <meta property="og:image" content="https://start.lesechos.fr/images/2017/02/01/7187_1485985909_duel-macron-lepen.jpg" />
   
-<!--   <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image:type" content="image/jpg" />
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="300" /> -->
-<!--     {% endblock %} -->
-    <meta property="og:image" content="https://start.lesechos.fr/images/2017/02/01/7187_1485985909_duel-macron-lepen.jpg" />
+{% endblock %}
+    
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -122,8 +123,10 @@
                 <h4 class="center header text_h2">Nous vous proposons d'essayer de deviner ce que feront les partisans de chaque candidat du 1er tour.</h4>
                 <h5 class="center header text_h2"> Les valeurs proposées par défaut pour les candidats ayant obtenu un score supérieur à 4% au premier sont tirés du <a href="https://www.lesechos.fr/elections/presidentielle-2017/0211739192332-sondage-le-suivi-quotidien-de-la-presidentielle-2062937.php">sondage du site Les Echos à la date du 28/04/17.</a> </h5>
                 <a id="simu" onclick="toggleDisplay()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4"><i  class="material-icons left">input</i>C'est parti! </a>
+
                  <!-- Go to www.addthis.com/dashboard to customize your tools --><p> 
-<div class="addthis_inline_share_toolbox"></div></p>
+                 <div class="addthis_inline_share_toolbox" data-url="www.simulateur-presidentielles-2017.fr" data-description="Devinez le choix des partisans des candidats du premier tour!" data-title="Macron ou Le Pen ce dimanche ?" data-media="https://start.lesechos.fr/images/2017/02/01/7187_1485985909_duel-macron-lepen.jpg">
+</p>
             </div>
         </div>
     </div>
