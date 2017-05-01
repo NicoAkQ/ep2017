@@ -320,11 +320,11 @@ footer.page-footer {
     color : white;
 }
 
-a:link {
+.intro_elysee a:link {
 color: white;
 
 }
-a:visited {
+.intro_elysee a:visited {
 color: white;
 
 }
