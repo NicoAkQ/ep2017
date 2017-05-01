@@ -26,34 +26,52 @@
 </section>
 <!--
 A METTRE DANS AIDE -->
-<p>
-1) Déplacez les curseurs pour chaque candidat du premier tour selon vos estimations : <ul>
-<li>
-- "Abstention au second tour?" : le taux d'abstention au second tour des personnes ayant voté pour ce candidat au premier tour.</li>
-<li>
-- "Votants pour Emmanuel Macron au second tour ?": le pourcentage des personnes ayant voté pour ce candidat au premier tour votant pour Emmanuel Macron au second tour .</li>
-<li>
-- Le pourcentage de votants pour Marine Le Pen est déduit de celui d'Emmanuel Macron.
-</p>
-<p>
-2) En dessous du dernier candidat, cliquez sur le bouton "Lancez la simulation" pour obtenir les résultats du second tour selon vos prédictions.
-<p>
-Notes : 
-<li>
-- Les curseurs sont positionnés par défaut pour les candidats ayant obtenu un score supérieur à 4% au premier tour selon le sondage du site <a href="https://www.lesechos.fr/elections/presidentielle-2017/0211739192332-sondage-le-suivi-quotidien-de-la-presidentielle-2062937.php">Les Echos</a> (mise à jour: 28/04/17).
-</li>
-<li>
-- Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la liste des candidats.
-</li>
-</p>
+
 
 <!-- marine le pen -->
 <form action="{% url "resultats" %}" method="post">
 
+<div class="container center">
+    <a id="simu2" onclick="showAide()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone">...Besoin d'aide?</a>
+</div>
+<div id="AIDE" class="container isNone foo zoomIn animate">
+    <div class="row z-depth-10">
+        <div class="container center">
+    <h4> Instructions </h4>
+    </div>
+       <p>
+1) Déplacez les curseurs pour chaque candidat du premier tour selon vos estimations:<ul>
+<li>
+- "Abstention au second tour ?" : le taux d'abstention au second tour des personnes ayant voté pour ce candidat au premier tour.</li>
+<li>
+- "Votants pour Emmanuel Macron au second tour ?": le pourcentage des personnes ayant voté pour ce candidat au premier tour votant pour Emmanuel Macron au second tour.</li>
+<li>
+Le pourcentage de votants pour Marine Le Pen est déduit de celui d'Emmanuel Macron.</li></ul>
+</p>
+<p>
+2) En dessous du dernier candidat, cliquez sur le bouton "Lancer la simulation" pour obtenir les résultats du second tour selon vos prédictions
+<p>
+<div class="container center">
+<h4 class="text-center"> Notes </h4>
+</div>
+<ul>
+<li>
+Les curseurs sont positionnés par défaut pour les candidats ayant obtenu un score supérieur à 4% au premier tour selon le sondage du site <a href="https://www.lesechos.fr/elections/presidentielle-2017/0211739192332-sondage-le-suivi-quotidien-de-la-presidentielle-2062937.php">Les Echos</a> (mise à jour: 28/04/17).
+</li>
+<li>
+Pour voir les "petits" candidats, cliquez sur "Autres candidats" à la fin de la liste des candidats.
+</li>
+</p>
+                    
+
+    </div>
+</div>
+<br>
 <div id="MAC" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
-            <h4>Emmanuel Macron</h4>
+        <div class="container center">
+            <h4>Emmanuel Macron</h4></div>
             <img class="img-circle" width="100%" src="http://img.gal.pmdstatic.net/fit/http.3A.2F.2Fwww.2Egala.2Efr.2Fvar.2Fgal.2Fstorage.2Fimages.2Fstars_et_gotha.2Femmanuel_macron.2F3127149-452-fre-FR.2Femmanuel_macron.2Ejpg/460x259/quality/80/emmanuel-macron.jpg">
                 <br>
         </div>
@@ -65,7 +83,7 @@ Notes :
                     <li><a href="https://en-marche.fr">en-marche.fr</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="1" name="abs_MAC" min="0" max="100" />
@@ -82,8 +100,8 @@ Notes :
 <!--candidat -->
 <div id="MLP" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Marine Le Pen</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Marine Le Pen</h4></div>
             <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
                 <br>
         </div>
@@ -95,7 +113,7 @@ Notes :
                     <li><a href="http://frontnational.com">frontnational.com</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="2" name="abs_MLP" min="0" max="100" />
@@ -112,8 +130,8 @@ Notes :
 <!--candidat -->
 <div id="FIL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>François Fillon</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>François Fillon</h4></div>
             <img class="img-circle" width="100%" src="https://media.rtl.fr/cache/xRUXe5yxtNv5vnMS2upzbw/880v587-0/online/image/2017/0316/7787698591_francois-fillon.jpg">
                 <br>
         </div>
@@ -126,7 +144,7 @@ Notes :
                     <li><a href="http://video.lefigaro.fr/figaro/video/francois-fillon-appelle-a-voter-emmanuel-macron-au-second-tour/5408457071001/">Vote Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="28" name="abs_FIL" min="0" max="100" />
@@ -143,8 +161,8 @@ Notes :
 <!--candidat -->
 <div id="MEL" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Jean-Luc Mélenchon</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Jean-Luc Mélenchon</h4></div>
             <img class="img-circle" width="100%" src="http://img.20mn.fr/BxVfVpOnSem0eySjbAQZMg/648x415_jean-luc-melenchon-recu-a-l-elysee-le-25-juin-2016.jpg">
                 <br>
         </div>
@@ -157,7 +175,7 @@ Notes :
                     <li><a href="https://www.lesechos.fr/elections/jean-luc-melenchon/0212024500472-presidentielle-melenchon-ne-tranche-pas-entre-vote-macron-et-vote-blanc-2083446.php">Vote blanc ou Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="40" name="abs_MEL" min="0" max="100" />
@@ -173,8 +191,8 @@ Notes :
 <!--candidat -->
 <div id="HAM" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Benoit Hamon</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Benoit Hamon</h4></div>
             <img class="img-circle" width="100%" src="http://e-spaces.eu/wp-content/uploads/2016/08/Benoit-Hamon.jpg">
                 <br>
         </div>
@@ -187,7 +205,7 @@ Notes :
                     <li><a href="http://www.lepoint.fr/video/reaction-des-militants-d-en-marche-quand-benoit-hamon-annonce-son-soutien-a-emmanuel-macron-23-04-2017-2121950_738.php">Vote Emmanuel Macron</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="29" name="abs_HAM" min="0" max="100" />
@@ -203,8 +221,8 @@ Notes :
 <!--candidat -->
 <div id="NDA" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Nicolas Dupont-Aignan</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Nicolas Dupont-Aignan</h4></div>
             <img class="img-circle" width="100%" src="http://lepeuple.be/wp-content/uploads/nicolas-dupont-aignan.jpg">
                 <br>
         </div>
@@ -217,7 +235,7 @@ Notes :
                     <li><a href="http://www.france24.com/fr/20170428-france-presidentielle-nicolas-dupont-aignan-soutient-marine-le-pen-front-national">Vote Marine Le Pen</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="32" name="abs_NDA" min="0" max="100" />
@@ -233,8 +251,8 @@ Notes :
 <!--candidat -->
 <div id="ABS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Abstention</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Abstention</h4></div>
             <img class="img-circle" width="100%" src="http://img.bfmtv.com/c/1256/708/2cb/210c672b9d6699e8f013b9a4668b3.jpg">
                 <br>
         </div>
@@ -245,12 +263,12 @@ Notes :
                     <li>Vote inconnu</li>
                 </ul>
             </p>                                  
-            <p>Participeront au second tour (%)
+            <p>Abstentionnistes du premier tour qui voteront au deuxième tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="0" name="abs_SUP" min="0" max="100" />
     </p>
-    <p>Pourcentages de personnes votant Emmanuel Macron au second tour ? </p>
+    <p>Votants pour Emmanuel Macron au second tour ? </p>
       <p class="range-field">
       <input type="range" value="50" name="mac_SUP" min="0" max="100" />
     </p>
@@ -261,14 +279,14 @@ Notes :
 <!-- CACHER CA -->
 <br>
 <div class="container center">
-    <a id="simu2" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Autres candidats</a>
+    <a id="simu3" onclick="showCandidat()" class="center btn-large waves-effect waves-light #ff5252 accent-2 accent-3  blue-grey darken-4 isNone"><i  class="material-icons left">input</i>Autres candidats</a>
 </div>
 <br>
 <!--candidat -->
 <div id="LAS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Jean Lassalle</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Jean Lassalle</h4></div>
             <img class="img-circle" width="100%" src="http://images.sudouest.fr/images/2015/03/04/jean-lassalle_2528657_480x300.jpg?v=1">
                 <br>
         </div>
@@ -281,7 +299,7 @@ Notes :
                     <li><a href="https://www.publicsenat.fr/article/politique/jean-lassalle-appelle-a-voter-blanc-au-second-tour-59522">Vote blanc</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_LAS" min="0" max="100" />
@@ -298,8 +316,8 @@ Notes :
 <!--candidat -->
 <div id="POU" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Philippe Poutou</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Philippe Poutou</h4></div>
             <img class="img-circle" width="100%" src="http://md1.libe.com/photo/861441-prodlibe-poutou.jpg?modified_at=1488797318&width=960">
                 <br>
         </div>
@@ -312,7 +330,7 @@ Notes :
                     <li><a href="http://www.bfmtv.com/politique/arthaud-et-poutou-n-appellent-pas-a-voter-macron-1149431.html">S'abstient</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_POU" min="0" max="100" />
@@ -328,8 +346,8 @@ Notes :
 <!--candidat -->
 <div id="ASS" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>François Asselineau</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>François Asselineau</h4></div>
             <img class="img-circle" width="100%" src="https://www.minutenews.fr/wp-content/uploads/2017/03/minutenews_francois-asselineau.jpg">
                 <br>
         </div>
@@ -342,7 +360,7 @@ Notes :
                     <li><a href="http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html">Vote inconnu</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_ASS" min="0" max="100" />
@@ -358,8 +376,8 @@ Notes :
 <!--candidat -->
 <div id="ART" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Nathalie Arthaud</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Nathalie Arthaud</h4></div>
             <img class="img-circle" width="100%" src="http://cdn.static01.nicematin.com/media/npo/mobile_1440w/2017/01/a1-6624104.jpg">
                 <br>
         </div>
@@ -373,7 +391,7 @@ Notes :
                     <li><a href="http://www.nathalie-arthaud.info/communiques/declaration-de-nathalie-arthaud-au-soir-du-premier-tour-89279.html">Vote blanc</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_ART" min="0" max="100" />
@@ -389,8 +407,8 @@ Notes :
 <!--candidat -->
 <div id="CHE" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
-        <div class="input-field col s6">
-            <h4>Jacques Cheminade</h4>
+        <div class="input-field col s6"><div class="container center">
+            <h4>Jacques Cheminade</h4></div>
             <img class="img-circle" width="100%" src="http://medias.mensquare.com/wp-content/uploads/sites/3/2012/10/cheminade-afp.jpg">
                 <br>
         </div>
@@ -403,7 +421,7 @@ Notes :
                     <li><a href="http://www.francetvinfo.fr/elections/presidentielle/fillon-melenchon-hamon-poutou-quelle-est-la-consigne-de-vote-des-neuf-elimines-en-vue-du-second-tour_2158950.html">Vote inconnu</a></li>
                 </ul>
             </p>                                  
-            <p>Abstention au second tour?
+            <p>Abstention au second tour ?
             </p>
                       <p class="range-field">
       <input type="range" value="100" name="abs_CHE" min="0" max="100" />
@@ -424,8 +442,7 @@ Notes :
     <i class="material-icons right">send</i>
   </button>
 </div>
-
-
+<br>
 
 </form>
             {% endblock %}

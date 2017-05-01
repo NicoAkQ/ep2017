@@ -18,11 +18,17 @@
         x.classList.toggle('isNone');
         var x = document.getElementById("simu2"); // Using a class instead, see note below.
         x.classList.toggle('isNone');
+        var x = document.getElementById("simu3"); // Using a class instead, see note below.
+        x.classList.toggle('isNone');
         console.log('hello')
          
     };
-
-       function showCandidat() {
+   function showAide() {
+        var x = document.getElementById("AIDE"); // Using a class instead, see note below.
+        x.classList.toggle('isNone');
+         
+    };
+function showCandidat() {
          var x = document.getElementById("LAS"); // Using a class instead, see note below.
         x.classList.toggle('isNone');
            var x = document.getElementById("POU"); // Using a class instead, see note below.
