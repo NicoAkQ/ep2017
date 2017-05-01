@@ -42,7 +42,7 @@ def resultats(request):
         donnees["H"+num]=float((request.POST.__getitem__(abs_can)))/100 # exploite directement la requête
         donnees["J"+num]=float((request.POST.__getitem__(val_mac_can)))/100
         i += 1
-    donnees["H16"]=float(request.POST.__getitem__("abs_SUP"))/100
+    donnees["H16"]=float(1-float(request.POST.__getitem__("abs_SUP"))/100)
     donnees["J16"]=float(request.POST.__getitem__("mac_SUP"))/100
     
     resultats=algo.get_resultat_simu(donnees) # envoie un dictionnaire à simuler_resultat
