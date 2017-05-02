@@ -362,7 +362,7 @@ input[type=range] + .thumb {
   transform: rotate(-45deg); }
   input[type=range] + .thumb .value {
     display: block;
-    width: 33px;
+    width: 21px;
     text-align: center;
     color: #26a69a;
     font-size: 0;
@@ -382,8 +382,8 @@ input[type=range] + .thumb {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 33px;
-  width: 33px;
+  height: 21px;
+  width: 21px;
   border-radius: 50%;
   background-color: #26a69a;
   transform-origin: 50% 50%;
@@ -396,8 +396,8 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type=range]::-moz-range-thumb {
   border: none;
-  height: 33px;
-  width: 33px;
+  height: 21px;
+  width: 21px;
   border-radius: 50%;
   background: #26a69a;
   margin-top: -5px; }
